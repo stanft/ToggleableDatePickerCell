@@ -34,6 +34,7 @@ open class ToggleableDatePickerCell: UITableViewCell {
     @IBOutlet private var togglerSwitch: UISwitch!
     @IBOutlet public var datePicker: UIDatePicker!
 
+    @IBOutlet private weak var separatorView: DVColorLockView!
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var togglerView: UIView!
     @IBOutlet private weak var datePickerView: UIView!
@@ -160,6 +161,7 @@ open class ToggleableDatePickerCell: UITableViewCell {
     }
 
     private func updateVisibilityOfElements() {
+        separatorView.isHidden = !expanded
         togglerView.isHidden = !expanded
         datePickerView.isHidden = !expanded || !dateActive
     }
@@ -170,9 +172,9 @@ open class ToggleableDatePickerCell: UITableViewCell {
                 self.togglerSwitch.isHidden = !self.expanded
                 self.togglerLabel.isHidden = !self.expanded
             })
-//            UIView.transition(with: rightLabel, duration: 0.1, options: .transitionCrossDissolve, animations: {
-//                self.rightLabel.textColor = self.expanded ? self.tintColor : self.rightLabelTextColor
-//            })
+            UIView.transition(with: rightLabel, duration: 0.1, options: .transitionCrossDissolve, animations: {
+                self.rightLabel.textColor = self.expanded ? self.tintColor : self.rightLabelTextColor
+            })
         }
 
         if !dateActive && expanded {

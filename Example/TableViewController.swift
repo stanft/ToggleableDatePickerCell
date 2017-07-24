@@ -13,7 +13,7 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 44
+        tableView.estimatedRowHeight = 40
     }
     
     // MARK: - Table view data source

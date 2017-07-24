@@ -10,12 +10,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerCell" customModule="ToggleableDatePickerCell" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToggleableDatePickerCell" customModule="ToggleableDatePickerCell" customModuleProvider="target">
             <connections>
                 <outlet property="datePicker" destination="hSY-mb-JxX" id="Ul5-l3-Cjc"/>
                 <outlet property="datePickerView" destination="0MX-ZT-Ica" id="riB-hR-tym"/>
                 <outlet property="leftLabel" destination="k7G-mA-X8I" id="hDP-ZM-qs0"/>
                 <outlet property="rightLabel" destination="hJS-zi-c4S" id="3bG-Hb-zt1"/>
+                <outlet property="separatorView" destination="S2K-hz-uE5" id="mV3-6r-EgG"/>
                 <outlet property="stackView" destination="OZN-eq-007" id="p02-La-dJs"/>
                 <outlet property="togglerLabel" destination="Lli-l7-qGD" id="1H7-tA-BTY"/>
                 <outlet property="togglerSwitch" destination="cct-wH-3YR" id="pXd-x4-r5G"/>
@@ -31,7 +32,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="390" height="325"/>
                     <subviews>
                         <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-9b-sXZ" userLabel="Cell Content">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7G-mA-X8I" userLabel="Left Label">
                                     <rect key="frame" x="8" y="8" width="87.5" height="20.5"/>
@@ -56,10 +57,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2K-hz-uE5" userLabel="Separator" customClass="DVColorLockView" customModule="ToggleableDatePickerCell" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="44" width="390" height="1"/>
+                            <rect key="frame" x="0.0" y="45" width="390" height="0.0"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="0.5" id="lPC-JN-nQ5"/>
+                                <constraint firstAttribute="height" priority="750" constant="0.5" id="lPC-JN-nQ5"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="lockedBackgroundColor">
