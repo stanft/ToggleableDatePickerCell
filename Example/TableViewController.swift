@@ -11,6 +11,11 @@ import ToggleableDatePickerCell
 
 class TableViewController: UITableViewController {
 
+    override func viewDidLoad() {
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 44
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -24,9 +29,24 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DateCell", for: indexPath) as! ToggleableDatePickerCell
         
-        // Configure the cell...
+        cell.delegate = self
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! ToggleableDatePickerCell
+        cell.selectedInTableView(tableView)
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
+}
+
+extension TableViewController: ToggleableDatePickerCellDelegate {
+    
+    func tableNeedsUpdate(for cell: ToggleableDatePickerCell) {
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
     
 }
