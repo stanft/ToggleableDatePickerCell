@@ -19,9 +19,11 @@ import UIKit
  */
 
 @objc public protocol ToggleableDatePickerCellDelegate {
-    @objc optional func toggeableDatePickerCell(_ cell: ToggleableDatePickerCell, didPickDate date: Date?)
+    
+    @objc optional func toggleableDatePickerCell(_ cell: ToggleableDatePickerCell, didPickDate date: Date?)
 
     func tableNeedsUpdate(for cell: ToggleableDatePickerCell)
+
 }
 
 open class ToggleableDatePickerCell: UITableViewCell {
@@ -101,8 +103,8 @@ open class ToggleableDatePickerCell: UITableViewCell {
 
     private func setup() {
         // Load content view from NIB
-        let bundle = Bundle(identifier: "DV.DatePickerCell")
-        let cellContentView = bundle?.loadNibNamed("DatePickerCell", owner: self, options: nil)![0] as! UIView
+        let bundle = Bundle(for: ToggleableDatePickerCell.self)
+        let cellContentView = bundle.loadNibNamed("ToggleableDatePickerCell", owner: self, options: nil)![0] as! UIView
 
         // Set content view
         self.contentView.addSubview(cellContentView)
@@ -122,10 +124,6 @@ open class ToggleableDatePickerCell: UITableViewCell {
         // Required to ensure smooth animation
         togglerLabel.isHidden = true
         togglerSwitch.isHidden = true
-
-        // Clear seconds and set initial date
-//        let timeIntervalSinceReferenceDateWithoutSeconds = floor(date.timeIntervalSinceReferenceDate / 60.0) * 60.0
-//        self.date = Date(timeIntervalSinceReferenceDate: timeIntervalSinceReferenceDateWithoutSeconds)
     }
 
 // MARK: Actions
@@ -141,7 +139,8 @@ open class ToggleableDatePickerCell: UITableViewCell {
     }
 
     @IBAction func datePicked(_ sender: UIDatePicker) {
-        print("Date picked")
+        date = dateActive ? datePicker.date : nil
+        self.delegate?.toggleableDatePickerCell?(self, didPickDate: date)
     }
     
 // MARK: Internal functions

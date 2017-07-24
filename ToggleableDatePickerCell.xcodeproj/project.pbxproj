@@ -13,7 +13,7 @@
 		144E88181F1F9D2F0066B67E /* ToggleableDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E88131F1F9D2F0066B67E /* ToggleableDatePickerCell.swift */; };
 		144E88191F1F9D2F0066B67E /* ToggleableDatePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144E88141F1F9D2F0066B67E /* ToggleableDatePickerCell.xib */; };
 		144E881B1F1F9E120066B67E /* ToggeableDatePickerCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E88031F1F9A2D0066B67E /* ToggeableDatePickerCellTests.swift */; };
-		144E881E1F1F9F530066B67E /* ToggleableDatePickerCell.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 144E881D1F1F9F530066B67E /* ToggleableDatePickerCell.podspec */; };
+		144E88241F1FABF70066B67E /* ToggleableDatePickerCell.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 144E88231F1FABF70066B67E /* ToggleableDatePickerCell.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		144E88121F1F9D2F0066B67E /* ToggeableDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggeableDatePickerCell.h; sourceTree = "<group>"; };
 		144E88131F1F9D2F0066B67E /* ToggleableDatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleableDatePickerCell.swift; sourceTree = "<group>"; };
 		144E88141F1F9D2F0066B67E /* ToggleableDatePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToggleableDatePickerCell.xib; sourceTree = "<group>"; };
-		144E881D1F1F9F530066B67E /* ToggleableDatePickerCell.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ToggleableDatePickerCell.podspec; path = Source/ToggleableDatePickerCell.podspec; sourceTree = "<group>"; };
+		144E88231F1FABF70066B67E /* ToggleableDatePickerCell.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToggleableDatePickerCell.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		144E881C1F1F9F300066B67E /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				144E881D1F1F9F530066B67E /* ToggleableDatePickerCell.podspec */,
+				144E88231F1FABF70066B67E /* ToggleableDatePickerCell.podspec */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144E881E1F1F9F530066B67E /* ToggleableDatePickerCell.podspec in Resources */,
+				144E88241F1FABF70066B67E /* ToggleableDatePickerCell.podspec in Resources */,
 				144E88191F1F9D2F0066B67E /* ToggleableDatePickerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +365,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.dlh.lhind.ToggeableDatePickerCell;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dlh.lhind.ToggleableDatePickerCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -384,7 +384,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.dlh.lhind.ToggeableDatePickerCell;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dlh.lhind.ToggleableDatePickerCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
