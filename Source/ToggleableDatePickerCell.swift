@@ -19,7 +19,7 @@ import UIKit
  */
 
 @objc public protocol ToggleableDatePickerCellDelegate {
-    
+
     @objc optional func toggleableDatePickerCell(_ cell: ToggleableDatePickerCell, didPickDate date: Date?)
 
     func tableNeedsUpdate(for cell: ToggleableDatePickerCell)
@@ -131,8 +131,7 @@ open class ToggleableDatePickerCell: UITableViewCell {
     @IBAction func togglerSwitched(_ sender: UISwitch) {
         if dateActive {
             date = datePicker.date
-        }
-        else {
+        } else {
             date = nil
         }
         performUIChangesForTogglerSwitch()
@@ -142,21 +141,20 @@ open class ToggleableDatePickerCell: UITableViewCell {
         date = dateActive ? datePicker.date : nil
         self.delegate?.toggleableDatePickerCell?(self, didPickDate: date)
     }
-    
+
 // MARK: Internal functions
-    
+
     private func performUIChangesForTogglerSwitch() {
         updateVisibilityOfElements()
         performUIChangesForDate()
         delegate?.tableNeedsUpdate(for: self)
     }
-    
+
     private func performUIChangesForDate() {
         if let date = date {
             datePicker.date = date
             rightLabel.text = ToggleableDatePickerCell.dateFormatter.string(from: date)
-        }
-        else {
+        } else {
             rightLabel.text = nil
         }
     }
