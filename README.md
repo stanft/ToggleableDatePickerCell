@@ -1,7 +1,11 @@
 # ToggleableDatePickerCell
 
-Inline/expandable date picker for iOS table views. This component is based on the `DatePickerCell` by Dylan Vann 
-(see https://github.com/DylanVann/DatePickerCell) but has been reimplemented based on iOS 9. In addition, the component
+Inline/expandable date picker for iOS table views. 
+
+This component is based on the `DatePickerCell` by Dylan Vann 
+(see https://github.com/DylanVann/DatePickerCell) but has been reimplemented based on iOS 9. 
+
+In addition, the component
 now supports the enabling/disabling of the date input so that it is possible to allow the user to choose whether
 a date input is appropiate or not.
 
