@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,16 +32,16 @@
                     <rect key="frame" x="0.0" y="0.0" width="390" height="325"/>
                     <subviews>
                         <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-9b-sXZ" userLabel="Cell Content">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7G-mA-X8I" userLabel="Left Label">
-                                    <rect key="frame" x="8" y="8" width="87.5" height="20.5"/>
+                                    <rect key="frame" x="20" y="8" width="87.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJS-zi-c4S" userLabel="Right Label">
-                                    <rect key="frame" x="296" y="8" width="86" height="20.5"/>
+                                    <rect key="frame" x="284" y="8" width="86" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2K-hz-uE5" userLabel="Separator" customClass="DVColorLockView" customModule="ToggleableDatePickerCell" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="45" width="390" height="0.0"/>
+                            <rect key="frame" x="0.0" y="44" width="390" height="1"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" priority="750" constant="0.5" id="lPC-JN-nQ5"/>
@@ -72,13 +72,13 @@
                             <rect key="frame" x="0.0" y="45" width="390" height="47"/>
                             <subviews>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cct-wH-3YR">
-                                    <rect key="frame" x="333" y="8" width="51" height="31"/>
+                                    <rect key="frame" x="321" y="8" width="51" height="31"/>
                                     <connections>
                                         <action selector="togglerSwitched:" destination="-1" eventType="valueChanged" id="sT3-de-HOC"/>
                                     </connections>
                                 </switch>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lli-l7-qGD">
-                                    <rect key="frame" x="8" y="13.5" width="52" height="20.5"/>
+                                    <rect key="frame" x="20" y="13.5" width="52" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
