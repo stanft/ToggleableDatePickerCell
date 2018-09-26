@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'ToggleableDatePickerCell'
-    s.version      = '1.0.0'
+    s.version      = '0.5.1'
     s.license      = { :type => 'MIT' }
     s.homepage     = 'https://github.com/stanft/ToggleableDatePickerCell'
     s.authors      = {'Dylan Vann' => 'dylanvann@gmail.com',
