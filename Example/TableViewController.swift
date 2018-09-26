@@ -12,7 +12,7 @@ import ToggleableDatePickerCell
 class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 40
     }
     
